@@ -48,7 +48,7 @@ public class ServerApp {
                     System.out.println("JSON" + json);
                     Gson gson = new Gson();
                     Mensagem ms = gson.fromJson(json, Mensagem.class);
-                    System.out.println(""+ ms.getData());
+                    System.out.println("" + ms.getData());
                     System.out.println("Destinatario:" + ms.getDestino());
                     System.out.println("Assunto:" + ms.getMsg());
                     ps.println("OK");
